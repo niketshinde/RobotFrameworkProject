@@ -1,0 +1,1 @@
+return angular.element(document).injector().get('$http').pendingRequests.length === 0

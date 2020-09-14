@@ -1,0 +1,1 @@
+grant_type=client_credentials&scope=Platform CustomerService SalesAndMarketing UXPortal Billing&client_id=CustomerService&client_secret=secret

@@ -1,0 +1,40 @@
+<WSDL>
+<!-- QA Environment -->
+   <INT>
+      <Token URL="adckbmv   ">
+         <CS360Token Method="POST" URL="/connect/token" TemplateName="CS360Token.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </CS360Token>
+		 <CRMToken Method="POST" URL="/connect/token" TemplateName="CRMToken.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </CRMToken>
+		 <DataExchangeToken Method="POST" URL="/connect/token" TemplateName="DataExchangeToken.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </DataExchangeToken>
+      </Token>
+   </INT>
+
+<!-- PROD Environment -->
+   <SYS>
+      <Token URL="">
+         <getNewToken Method="POST" URL="/connect/token" TemplateName="GetToken.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </getNewToken>
+      </Token>
+   </SYS>
+
+<!-- DEV Environment -->
+   <PF>
+      <Token URL="">
+        <CS360Token Method="POST" URL="/connect/token" TemplateName="CS360Token.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </CS360Token>
+		 <CRMToken Method="POST" URL="/connect/token" TemplateName="CRMToken.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </CRMToken>
+		 <DataExchangeToken Method="POST" URL="/connect/token" TemplateName="DataExchangeToken.txt">
+            <Content-Type>application/x-www-form-URLencoded</Content-Type>
+         </DataExchangeToken>
+      </Token>
+   </PF>
+</WSDL>
